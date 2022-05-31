@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class MainController {
 
-    @GetMapping
-    public String cicd(){
+    @GetMapping("/welcome")
+    public String welcome(){
         return "This app is using Github actions for CI/CD";
     }
 }
